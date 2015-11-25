@@ -17,5 +17,5 @@ func main() {
 		fmt.Println(err)
 	}
 
-	fmt.Println(c.Get("key"))
+	//fmt.Println(c.Get("key"))
 }
