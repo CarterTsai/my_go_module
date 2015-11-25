@@ -5,7 +5,8 @@ const (
 	VIPER = iota
 	DEFAULT
 
-	PATH = "./config/"
+	PATH    = "./config/"
+	ExtName = ".json"
 )
 
 // Config Struct
@@ -15,7 +16,9 @@ type Config interface {
 }
 
 // CreateConfig new Config
-func CreateConfig(t int) (Config, error) {
+func CreateConfig() (Config, error) {
+	t := DEFAULT
+
 	switch t {
 	case VIPER:
 		return new(Viper), nil

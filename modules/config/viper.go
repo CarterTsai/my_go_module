@@ -14,5 +14,5 @@ func (v *Viper) SetConfig(filename string) error {
 
 // Get key value
 func (v *Viper) Get(key string) interface{} {
-	return PATH + v.ConfigName
+	return PATH + v.ConfigName + ExtName
 }

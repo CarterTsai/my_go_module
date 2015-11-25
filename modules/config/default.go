@@ -14,5 +14,5 @@ func (d *Default) SetConfig(filename string) error {
 
 // Get key value
 func (d *Default) Get(key string) interface{} {
-	return PATH + d.ConfigName
+	return PATH + d.ConfigName + ExtName
 }
