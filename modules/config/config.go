@@ -13,11 +13,12 @@ const (
 type Config interface {
 	SetConfig(string) error
 	Get(key string) interface{}
+	Set(key string, value interface{}) bool
 }
 
 // CreateConfig new Config
 func CreateConfig() (Config, error) {
-	t := DEFAULT
+	t := VIPER
 
 	switch t {
 	case VIPER:

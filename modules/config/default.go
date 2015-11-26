@@ -30,3 +30,8 @@ func (d *Default) SetConfig(filename string) error {
 func (d *Default) Get(key string) interface{} {
 	return PATH + d.ConfigName
 }
+
+// Set key value - not implemented
+func (d *Default) Set(key string, value interface{}) bool {
+	return true
+}

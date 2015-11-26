@@ -17,5 +17,8 @@ func main() {
 		fmt.Println(err)
 	}
 
-	//fmt.Println(c.Get("key"))
+	fmt.Println(c.Get("key"))
+	fmt.Println(c.Get("host"))
+	fmt.Println(c.Set("host", "hello"))
+	fmt.Println(c.Get("host"))
 }
